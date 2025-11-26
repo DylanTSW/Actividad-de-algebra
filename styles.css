@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,24 +15,25 @@ body {
 }
 
 .container {
-    background: white;
+    background: #0f0f0f;
     max-width: 600px;
     width: 100%;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
 }
 
 h1 {
-    color: #1e3c72;
+    color: #d4af37;
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
-    color: #2a5298;
+    color: #b9972c;
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 500;
@@ -44,7 +45,7 @@ h3 {
 
 label {
     display: block;
-    color: #333;
+    color: #f8f8f8;
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -52,35 +53,38 @@ label {
 textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 4px;
+    border: 2px solid #b9972c;
+    background: #1a1a1a;
+    color: #f8f8f8;
+    border-radius: 6px;
     font-size: 16px;
     resize: vertical;
     min-height: 80px;
     font-family: inherit;
-    transition: border-color 0.3s;
+    transition: 0.3s;
 }
 
 textarea:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
 .char-count {
     text-align: right;
-    color: #666;
+    color: #d4af37;
     font-size: 12px;
     margin-top: 5px;
 }
 
 .matriz-display {
-    background: #f5f5f5;
+    background: #111;
     padding: 20px;
-    border-radius: 4px;
-    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    border: 2px solid #b9972c;
     min-height: 60px;
     font-family: 'Courier New', monospace;
-    color: #333;
+    color: #d4af37;
     line-height: 1.8;
 }
 
@@ -93,34 +97,38 @@ textarea:focus {
 
 .matriz-input input {
     padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 4px;
+    border: 2px solid #b9972c;
+    border-radius: 6px;
     font-size: 18px;
     text-align: center;
+    background: #1a1a1a;
+    color: #f8f8f8;
     transition: border-color 0.3s;
 }
 
 .matriz-input input:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
 button {
     width: 100%;
     padding: 15px;
-    background: #2a5298;
-    color: white;
+    background: #d4af37;
+    color: #0a0a0a;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
     margin: 20px 0;
 }
 
 button:hover {
-    background: #1e3c72;
+    background: #b9972c;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 button:active {
@@ -128,18 +136,18 @@ button:active {
 }
 
 .resultado-box {
-    background: #f5f5f5;
+    background: #111;
     padding: 20px;
-    border-radius: 4px;
-    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    border: 2px solid #b9972c;
     min-height: 60px;
     font-family: 'Courier New', monospace;
-    color: #333;
+    color: #d4af37;
     word-wrap: break-word;
 }
 
 .error {
-    color: #d32f2f;
-    background: #ffebee;
-    border-color: #d32f2f;
+    color: #ff7272;
+    background: #330000;
+    border-color: #ff3232;
 }
